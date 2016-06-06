@@ -15,9 +15,8 @@ module.exports = {
         preLoaders: [
             {
                 test: /\.ts(x?)$/,
-                loaders: [
-                    'tslint'
-                ]
+                loader: 'tslint',
+                exclude: /node_modules/
             }
         ],
         loaders: [{
@@ -54,7 +53,8 @@ module.exports = {
     },
     tslint: {
         emitErrors: true,
-        failOnHint: true
+        failOnWarning: true,
+        failOnError: true
     },
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']

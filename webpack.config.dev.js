@@ -6,7 +6,8 @@ module.exports = merge(common, {
     output: {
         filename: 'bundle.js'
     },
-    devtool: 'eval-cheap-module-source-map',
+    // devtool: 'eval-cheap-module-source-map',
+    devtool: 'source-map',
     debug: true,
     devServer: {
         hot: true,
