@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "skipDefaultLibCheck": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
